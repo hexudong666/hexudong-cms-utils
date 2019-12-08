@@ -16,13 +16,13 @@ import com.hexudong.cms.utils.entity.FileUtils;
  */
 public class TestFileUtils {
 	
-	@Test
+	/*@Test
 	public void testGetSuffix() {
 		
 		String suffix = FileUtils.getSuffixName("D:\\program\\nodejs\\node_cache\\anonymous-cli-metrics.json");
 		System.out.println("suffix = " + suffix);
 		
-	}
+	}*/
 	
 	@Test
 	public void testDelFile() {
@@ -42,30 +42,27 @@ public class TestFileUtils {
 	}
 	
 	
-	@Test
+	/*@Test
 	public void testCompare() throws FileNotFoundException, IOException {
 		System.out.println("比较开始");
 		FileUtils.comparePath("D:\\project\\07b", "D:\\project\\07b - 副本");
 		System.out.println("比较结束");
-	}
+	}*/
 	
 	@Test
 	public void testReadLines() throws IOException {
 		
-		List<String> lines = FileUtils.readByLines("D:\\project\\07b - 副本\\"
-				+ "src\\main\\java\\test\\com\\zhu"
-				+ "zg\\unit15\\TestJoinTest.java");
+		List<String> lines = FileUtils.readByLines("E:\\690条数据.txt");
 		
 		lines.forEach(x->{System.out.println(" x is " + x);});
 	}
 	
-	
-	@Test
+	/*@Test
 	public void testCopy() throws IOException {
 		String src="D:\\project\\07b\\07b.zip";
 		String dst="D:\\project\\07b\\07b2.zip";
 		FileUtils.copy(src,dst );
-	} 
+	}*/ 
 	
 	
 	
