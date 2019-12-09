@@ -20,9 +20,9 @@ import com.hexudong.cms.utils.entity.StringUtils;
  */
 public class TestStringUtils {
 	
-	static StringUtils stringUtils;
+//	static StringUtils stringUtils;
 	
-	@Before
+/*	@Before
 	public void init() {
 		
 		stringUtils = new StringUtils();
@@ -46,7 +46,7 @@ public class TestStringUtils {
 		System.err.println("afterClass  -----------");
 		
 	}
-	
+*/	
 	
 	
 	/*@Test
@@ -60,20 +60,20 @@ public class TestStringUtils {
 	
 	}*/
 	
-	@Test
+/*	@Test
 	public void testIsMobileTrue() {
 		String str = "13683679291";
 		Assert.assertTrue("错误1", StringUtils.isMobile(str));
 		
 	}
-	
-	@Test
+*/	
+/*	@Test
 	public void testIsMobileFalse() {
 		String str = "136836792b1";
 		Assert.assertFalse("错误2", StringUtils.isMobile(str));
 		
 	}
-	
+*/	
 	
 	/*@Test
 	public void testRandom() {
@@ -112,7 +112,7 @@ public class TestStringUtils {
 	}*/
 	
 	//判断是否手机号
-	@Test
+/*	@Test
 	public static boolean judgeTelephoneIsOk(String src){
 		//TODO 实现代码
 		boolean cc = StringUtils.isMobile("13512345678");
@@ -121,7 +121,7 @@ public class TestStringUtils {
 		}
 		return false;
 	}
-
+*/
 	
 
 }

@@ -24,25 +24,25 @@ public class TestFileUtils {
 		
 	}*/
 	
-	@Test
+/*	@Test
 	public void testDelFile() {
 		FileUtils.delFile("D:\\mvntest - 副本zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz	");
 	}
-	
-	@Test
+*/	
+/*	@Test
 	public void testGetpro() {
 		FileUtils.getProperty("");
 		
 	}
-	
-	
+*/	
+/*	
 	@Test 
 	public void testGetEvn() {
 		System.out.println( "java_home is " +  FileUtils.getEnv("JAVA_HOME"));
 	}
 	
 	
-	/*@Test
+*/	/*@Test
 	public void testCompare() throws FileNotFoundException, IOException {
 		System.out.println("比较开始");
 		FileUtils.comparePath("D:\\project\\07b", "D:\\project\\07b - 副本");
@@ -52,7 +52,7 @@ public class TestFileUtils {
 	
 	
 	//读取文件
-	@Test
+/*	@Test
 	public void testReadLines() throws IOException {
 		
 		List<String> lines = FileUtils.readByLines("C:\\Users\\Administrator\\Desktop\\data.txt");
@@ -60,7 +60,7 @@ public class TestFileUtils {
 		lines.forEach(x->{System.out.println(" x is " + x);});
 		
 	}
-	
+*/	
 	/*@Test
 	public void testCopy() throws IOException {
 		String src="D:\\project\\07b\\07b.zip";
