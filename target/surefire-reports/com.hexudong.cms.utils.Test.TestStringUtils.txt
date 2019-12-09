@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.hexudong.cms.utils.Test.TestStringUtils
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.025 sec <<< FAILURE!
-initializationError(com.hexudong.cms.utils.Test.TestStringUtils)  Time elapsed: 0.002 sec  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+initializationError(com.hexudong.cms.utils.Test.TestStringUtils)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.Exception: Method judgeTelephoneIsOk() should not be static
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoid(FrameworkMethod.java:88)
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoidNoArg(FrameworkMethod.java:70)
@@ -31,7 +31,7 @@ java.lang.Exception: Method judgeTelephoneIsOk() should not be static
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-initializationError(com.hexudong.cms.utils.Test.TestStringUtils)  Time elapsed: 0.001 sec  <<< ERROR!
+initializationError(com.hexudong.cms.utils.Test.TestStringUtils)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.Exception: Method judgeTelephoneIsOk() should be void
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoid(FrameworkMethod.java:97)
 	at org.junit.runners.model.FrameworkMethod.validatePublicVoidNoArg(FrameworkMethod.java:70)
