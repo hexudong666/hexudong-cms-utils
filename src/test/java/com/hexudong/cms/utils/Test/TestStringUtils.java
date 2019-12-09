@@ -16,7 +16,6 @@ import com.hexudong.cms.utils.entity.StringUtils;
 
 /**
  * 
- * @author zhuzg
  *
  */
 public class TestStringUtils {
@@ -50,7 +49,7 @@ public class TestStringUtils {
 	
 	
 	
-	@Test
+	/*@Test
 	public void testIsBlank1() {
 		
 		boolean blank = stringUtils.isBlank("11");
@@ -59,7 +58,7 @@ public class TestStringUtils {
 		Assert.assertTrue(blank==false);	
 		
 	
-	}
+	}*/
 	
 	@Test
 	public void testIsMobileTrue() {
@@ -76,42 +75,53 @@ public class TestStringUtils {
 	}
 	
 	
-	@Test
+	/*@Test
 	public void testRandom() {
 		String randomStr = StringUtils.getRandomStr(20);
 		System.out.println(" randomStr is " + randomStr );
 		Assert.assertTrue(20==randomStr.length());
 		
-	}
+	}*/
 	
-	@Test
+	/*@Test
 	public void testGetRandomStrNum() {
 		String randomStrNum = StringUtils.getRandomStrNum(15);
 		System.out.println(" randomStrNum  is " + randomStrNum);
 		Assert.assertTrue(15==randomStrNum.length());
-	}
+	}*/
 	
 	/**
 	 * 测试随机中文字符串
 	 * @throws UnsupportedEncodingException 
 	 */
-	@Test
+	/*@Test
 	public void testGetCn() throws UnsupportedEncodingException {
 		String s = StringUtils.getGb2312(20);
 		System.out.println("中文是：s is " + s);
 		
-	}
+	}*/
 	
 	
-	@Test
+	/*@Test
 	public void testIsBlank2() {
 		
 		Boolean blank = stringUtils.isBlank("   ");
 		System.out.println(" blank is " + blank);
 		Assert.assertTrue(blank==true);
 		
-	}
+	}*/
 	
+	//判断是否手机号
+	@Test
+	public static boolean judgeTelephoneIsOk(String src){
+		//TODO 实现代码
+		boolean cc = StringUtils.isMobile("13512345678");
+		if (cc) {
+			System.out.println("是手机号");
+		}
+		return false;
+	}
+
 	
 
 }

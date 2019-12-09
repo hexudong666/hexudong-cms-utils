@@ -49,12 +49,16 @@ public class TestFileUtils {
 		System.out.println("比较结束");
 	}*/
 	
+	
+	
+	//读取文件
 	@Test
 	public void testReadLines() throws IOException {
 		
-		List<String> lines = FileUtils.readByLines("E:\\690条数据.txt");
+		List<String> lines = FileUtils.readByLines("C:\\Users\\Administrator\\Desktop\\data.txt");
 		
 		lines.forEach(x->{System.out.println(" x is " + x);});
+		
 	}
 	
 	/*@Test

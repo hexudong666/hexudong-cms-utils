@@ -11,7 +11,7 @@ package com.hexudong.cms.utils.entity;
 		/**
 		 *  随机字符串源
 		 */
-		static char charArray[] = new char[36];
+		/*static char charArray[] = new char[36];
 		static {
 			// 构建随机字符串的原始数组
 			for (int i = 0; i < 10; i++) {
@@ -20,7 +20,7 @@ package com.hexudong.cms.utils.entity;
 			for (int i = 0; i < 26; i++) {
 				charArray[i+10] = (char)('A' + i);
 			}		
-		}
+		}*/
 		
 		
 		
@@ -31,9 +31,9 @@ package com.hexudong.cms.utils.entity;
 		 * @return 为空返回true  否则返回false
 		 * 
 		 */
-		public static boolean isBlank(String str) {
+		/*public static boolean isBlank(String str) {
 			return null==str||"".equals(str.trim());
-		}
+		}*/
 		
 		/**
 		 * 判断一个字符串时间否有值 
@@ -49,27 +49,25 @@ package com.hexudong.cms.utils.entity;
 		 * @param str
 		 * @return
 		 */
-		public static boolean isNumber(String str) {
+		/*public static boolean isNumber(String str) {
 			String regex = "^\\d{1,}$";
 			Pattern compile = Pattern.compile(regex);
 			Matcher matcher = compile.matcher(str);
 			boolean find = matcher.find();
 			return find;
-		}
+		}*/
 		
 		/**
-		 * 
+		 * 判断是否手机号
 		 * @param str
 		 * @return
 		 */
 		public static boolean isMobile(String str) {
-			String regex = "^(135|136|138)\\d{8}$";
+			String regex = "^1(35|36|38)\\d{8}$";
 			Pattern compile = Pattern.compile(regex);
 			Matcher matcher = compile.matcher(str);
 			boolean find = matcher.find();
 			return find;
-			
-			
 		}
 		
 		/**
@@ -77,7 +75,7 @@ package com.hexudong.cms.utils.entity;
 		 * @param n
 		 * @return
 		 */
-		public static String getRandomStr(int n) {
+		/*public static String getRandomStr(int n) {
 			Random random = new Random();
 			//Math.random();
 			//UUID.randomUUID();
@@ -94,14 +92,14 @@ package com.hexudong.cms.utils.entity;
 				sb.append(randomChar);
 			}
 			return sb.toString();
-		}
+		}*/
 		
 		/**
 		 * 获取英文和数字组合的字符串
 		 * @param n
 		 * @return
 		 */
-		public static String getRandomStrNum(int n) {
+		/*public static String getRandomStrNum(int n) {
 			//char charArray[] = {'0','1' ..}
 			Random random = new Random();
 			
@@ -116,7 +114,7 @@ package com.hexudong.cms.utils.entity;
 			
 			return sb.toString();
 			
-		}
+		}*/
 		
 		/**
 		 * 获取随机字符串 长度2为n
@@ -124,21 +122,21 @@ package com.hexudong.cms.utils.entity;
 		 * @return 
 		 * @throws UnsupportedEncodingException 
 		 */
-		public static String getGb2312(int n) throws UnsupportedEncodingException {
+		/*public static String getGb2312(int n) throws UnsupportedEncodingException {
 			
 			StringBuilder sb = new StringBuilder();
 			for (int i = 0; i < n; i++) {
 				sb.append(getGb2312());
 			}
 			return sb.toString();
-		}
+		}*/
 		
 		/**
 		 * 随机获取一个中文汉字
 		 * @return
 		 * @throws UnsupportedEncodingException 
 		 */
-		private static String getGb2312() throws UnsupportedEncodingException {
+		/*private static String getGb2312() throws UnsupportedEncodingException {
 			
 			byte word[] = new byte[2];
 			//  0x1A   0x1A+94
@@ -147,6 +145,6 @@ package com.hexudong.cms.utils.entity;
 			word[1] = (byte)(0xA1  + random.nextInt(94));
 			return new String(word,"GBK");
 			
-		}
+		}*/
 
 	}
