@@ -49,13 +49,12 @@ package com.hexudong.cms.utils.entity;
 		 * @param str
 		 * @return
 		 */
-		/*public static boolean isNumber(String str) {
-			String regex = "^\\d{1,}$";
-			Pattern compile = Pattern.compile(regex);
-			Matcher matcher = compile.matcher(str);
-			boolean find = matcher.find();
-			return find;
-		}*/
+		public static boolean isNumber(String src) {
+			//String regix="[0-9]{1,}(\\.?|[0-9]*)";
+			String regix="[0-9]{1,}\\\\.?[0-9]*";
+//			String regix="^\\d{n}$";
+			return src.matches(regix);
+		}
 		
 		/**
 		 * 判断是否手机号
