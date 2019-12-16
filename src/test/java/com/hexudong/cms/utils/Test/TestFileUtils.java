@@ -10,8 +10,6 @@ import com.hexudong.cms.utils.entity.FileUtils;
 
 
 /**
- * 测试文件的工具类
- * @author zhuzg
  *
  */
 public class TestFileUtils {
@@ -52,15 +50,20 @@ public class TestFileUtils {
 	
 	
 	//读取文件
-/*	@Test
+	@Test
 	public void testReadLines() throws IOException {
 		
-		List<String> lines = FileUtils.readByLines("C:\\Users\\Administrator\\Desktop\\data.txt");
+		List<String> lines = FileUtils.readByLines("E:\\周考3文件.txt");
 		
 		lines.forEach(x->{System.out.println(" x is " + x);});
 		
+		for (String string : lines) {
+			String[] split = string.split("\\|");
+			//添加
+		}
+		
 	}
-*/	
+	
 	/*@Test
 	public void testCopy() throws IOException {
 		String src="D:\\project\\07b\\07b.zip";

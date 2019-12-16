@@ -181,7 +181,7 @@ public class FileUtils {
 		//创建文件输入流
 		FileInputStream fis = new FileInputStream(file);
 		// 创建缓冲流
-		BufferedReader br = new BufferedReader(new InputStreamReader(fis,"GBK"));
+		BufferedReader br = new BufferedReader(new InputStreamReader(fis,"UTF-8"));
 		String ln=null;
 		//按行读入
 		while ((ln= br.readLine())!=null) {
@@ -200,7 +200,7 @@ public class FileUtils {
 	 * @return
 	 * @throws IOException 
 	 */
-	public static List<String> readByLines(String fileName) throws IOException {
+public static List<String> readByLines(String fileName) throws IOException {
 		
 		//用于存储文件内容
 		List<String> lines = new ArrayList();
