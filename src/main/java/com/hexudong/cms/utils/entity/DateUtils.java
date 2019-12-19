@@ -7,7 +7,6 @@ import java.util.Locale;
 
 /**
  * 关于日期的工具类
- * @author zhuzg
  *
  */
 public class DateUtils {

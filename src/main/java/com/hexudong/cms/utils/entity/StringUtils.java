@@ -1,10 +1,7 @@
 package com.hexudong.cms.utils.entity;
 
-	import java.io.UnsupportedEncodingException;
-	import java.util.Random;
-	import java.util.UUID;
-	import java.util.regex.Matcher;
-	import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 	public class StringUtils {
 		
@@ -23,6 +20,21 @@ package com.hexudong.cms.utils.entity;
 		}*/
 		
 		
+		/**
+		 * 
+		    * @Title: isEmail
+		    * @Description: 是否邮箱
+		    * @param @param str
+		    * @param @return    参数
+		    * @return boolean    返回类型
+		    * @throws
+		 */
+		public static boolean isEmail(String str) {
+			String pattern = "^\\w+@\\w+\\.[a-zA-Z]{2,3}$";
+			Pattern compile = Pattern.compile(pattern);
+			Matcher matcher = compile.matcher(str);
+			return matcher.matches();
+		}	
 		
 
 		/**
@@ -31,9 +43,25 @@ package com.hexudong.cms.utils.entity;
 		 * @return 为空返回true  否则返回false
 		 * 
 		 */
-		/*public static boolean isBlank(String str) {
+		public static boolean isBlank(String str) {
 			return null==str||"".equals(str.trim());
-		}*/
+		}
+		
+		/**
+		 * 判断手机号码是否为数值，是否长度为11位，开始位必须是1 
+		 * @param src
+		 * @return
+		 */
+		public static boolean judgeTelephoneIsOk(String src){
+			
+			String regex = "^1\\d{10}$";
+			
+			Pattern compile = Pattern.compile(regex);
+			Matcher matcher = compile.matcher(src);
+			boolean find = matcher.matches();
+			return find;
+			
+		}
 		
 		/**
 		 * 判断一个字符串时间否有值 
@@ -49,11 +77,12 @@ package com.hexudong.cms.utils.entity;
 		 * @param str
 		 * @return
 		 */
-		public static boolean isNumber(String src) {
-			//String regix="[0-9]{1,}(\\.?|[0-9]*)";
-			String regix="[0-9]{1,}\\\\.?[0-9]*";
-//			String regix="^\\d{n}$";
-			return src.matches(regix);
+		public static boolean isNumber(String str) {
+			String regex = "^\\d{1,}$";
+			Pattern compile = Pattern.compile(regex);
+			Matcher matcher = compile.matcher(str);
+			boolean find = matcher.find();
+			return find;
 		}
 		
 		/**
