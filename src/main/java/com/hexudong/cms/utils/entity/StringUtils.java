@@ -180,7 +180,7 @@ import java.util.regex.Pattern;
 		 * @param url
 		 * @return
 		 */
-		public static boolean isHttpUrl(String str){
+		public static boolean isurl(String str){
 			
 			 //转换为小写
 	        str = str.toLowerCase();
