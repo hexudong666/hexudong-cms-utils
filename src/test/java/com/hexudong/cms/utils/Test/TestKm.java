@@ -26,7 +26,7 @@ public class TestKm {
 		}
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		for (String carStr : lines) {
-//			Car car = new Car();
+			Car car = new Car();
 			String[] carData = carStr.split("\\|");
 			if(carData.length!=4) {
 				System.out.println(" 数据 不合法  长度 " + carStr);
@@ -53,7 +53,7 @@ public class TestKm {
 				System.out.println("日期解析错误  " + carStr);
 				continue;
 			}
-//			car.setDistance(DemoKM.calBylw(car.getLongitude(), car.getLatitude(), 116.38, 39.90));
+			car.setDistance(DemoKM.calBylw(car.getLongitude(), car.getLatitude(), 116.38, 39.90));
 			System.out.println(" car is  " + car);
 		}
 		
