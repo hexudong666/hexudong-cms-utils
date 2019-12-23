@@ -1,5 +1,7 @@
 package com.hexudong.cms.utils.entity;
 
+import java.io.UnsupportedEncodingException;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -8,7 +10,7 @@ import java.util.regex.Pattern;
 		/**
 		 *  随机字符串源
 		 */
-		/*static char charArray[] = new char[36];
+		static char charArray[] = new char[36];
 		static {
 			// 构建随机字符串的原始数组
 			for (int i = 0; i < 10; i++) {
@@ -17,7 +19,7 @@ import java.util.regex.Pattern;
 			for (int i = 0; i < 26; i++) {
 				charArray[i+10] = (char)('A' + i);
 			}		
-		}*/
+		}
 		
 		
 		/**
@@ -127,7 +129,7 @@ import java.util.regex.Pattern;
 		 * @param n
 		 * @return
 		 */
-		/*public static String getRandomStrNum(int n) {
+		public static String getRandomStrNum(int n) {
 			//char charArray[] = {'0','1' ..}
 			Random random = new Random();
 			
@@ -142,7 +144,8 @@ import java.util.regex.Pattern;
 			
 			return sb.toString();
 			
-		}*/
+		}
+		
 		
 		/**
 		 * 获取随机字符串 长度2为n
@@ -150,30 +153,30 @@ import java.util.regex.Pattern;
 		 * @return 
 		 * @throws UnsupportedEncodingException 
 		 */
-		/*public static String getGb2312(int n) throws UnsupportedEncodingException {
+		public static String getGb2312(int n) throws UnsupportedEncodingException {
 			
 			StringBuilder sb = new StringBuilder();
 			for (int i = 0; i < n; i++) {
 				sb.append(getGb2312());
 			}
 			return sb.toString();
-		}*/
+		}
 		
 		/**
 		 * 随机获取一个中文汉字
 		 * @return
 		 * @throws UnsupportedEncodingException 
 		 */
-		/*private static String getGb2312() throws UnsupportedEncodingException {
+		private static String getGb2312() throws UnsupportedEncodingException {
 			
 			byte word[] = new byte[2];
 			//  0x1A   0x1A+94
 			Random random = new Random();
 			word[0] = (byte)(0xA1 + 0x10 + random.nextInt(39));
 			word[1] = (byte)(0xA1  + random.nextInt(94));
-			return new String(word,"GBK");
+			return new String(word,"UTF-8");
 			
-		}*/
+		}
 
 		/**
 		 * 验证是否是URL
