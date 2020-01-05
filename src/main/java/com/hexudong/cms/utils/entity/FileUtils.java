@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -71,17 +72,17 @@ public class FileUtils {
 	public static String getProperty(String key) {
 		
 		Properties properties = System.getProperties();
-		/*//获取环境变量
-		//System.getenv();
+		//获取环境变量
+		System.getenv();
 		
-		//ArrayList<String> arrayList = new ArrayList<String>();
-		//
-		//arrayList.forEach(x->{System.out.println(x);});
-		 Set<Object> keySet = properties.keySet();
+		ArrayList<String> arrayList = new ArrayList<String>();
+		
+		arrayList.forEach(x->{System.out.println(x);});
+		Set<Object> keySet = properties.keySet();
 		for (Object hKey: keySet) {
 			System.out.println("hKey is " + hKey);
 			System.out.println("hValue is " + properties.getProperty((String) hKey));
-		}*/
+		}
 		return properties.getProperty(key);
 	} 
 	
@@ -93,10 +94,10 @@ public class FileUtils {
 	public static String getEnv(String key) {
 		
 		Map<String, String> getenv = System.getenv();
-		/*getenv.forEach((hKey,hValue)->{
+		getenv.forEach((hKey,hValue)->{
 			System.out.println("key is " + hKey );
 			System.out.println("vlaue is " + hValue );
-		});*/
+		});
 		return getenv.get(key);
 	}
 	

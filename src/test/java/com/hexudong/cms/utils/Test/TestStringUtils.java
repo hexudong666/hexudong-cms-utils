@@ -22,7 +22,7 @@ public class TestStringUtils {
 	
 	static StringUtils stringUtils;
 	
-/*	@Before
+	@Before
 	public void init() {
 		
 		stringUtils = new StringUtils();
@@ -46,10 +46,10 @@ public class TestStringUtils {
 		System.err.println("afterClass  -----------");
 		
 	}
-*/	
+
 	
 	
-	/*@Test
+	@Test
 	public void testIsBlank1() {
 		
 		boolean blank = stringUtils.isBlank("11");
@@ -58,7 +58,7 @@ public class TestStringUtils {
 		Assert.assertTrue(blank==false);	
 		
 	
-	}*/
+	}
 	
 	@Test
 	public void testIsMobileTrue() {
@@ -75,33 +75,35 @@ public class TestStringUtils {
 	}
 
 	
-	/*@Test
+	@Test
 	public void testRandom() {
 		String randomStr = StringUtils.getRandomStr(20);
 		System.out.println(" randomStr is " + randomStr );
 		Assert.assertTrue(20==randomStr.length());
 		
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	public void testGetRandomStrNum() {
 		String randomStrNum = StringUtils.getRandomStrNum(15);
 		System.out.println(" randomStrNum  is " + randomStrNum);
 		Assert.assertTrue(15==randomStrNum.length());
-	}*/
+	}
 	
 	/**
 	 * 测试随机中文字符串
 	 * @throws UnsupportedEncodingException 
 	 */
-	/*@Test
+	@Test
 	public void testGetCn() throws UnsupportedEncodingException {
 		String s = StringUtils.getGb2312(20);
 		System.out.println("中文是：s is " + s);
 		
-	}*/
+	}
 	
-	
+	/*
+	 * 测试是否空
+	 */
 	@Test
 	public void testIsBlank2() {
 		
@@ -122,6 +124,14 @@ public class TestStringUtils {
 		return false;
 	}
 
+	/**
+	 * 
+	    * @Title: isNumber
+	    * @Description: 是否数字
+	    * @param @return    参数
+	    * @return boolean    返回类型
+	    * @throws
+	 */
 	@Test
 	public static boolean isNumber() {
 		boolean number = stringUtils.isNumber("123124");

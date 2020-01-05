@@ -105,7 +105,7 @@ import java.util.regex.Pattern;
 		 * @param n
 		 * @return
 		 */
-		/*public static String getRandomStr(int n) {
+		public static String getRandomStr(int n) {
 			Random random = new Random();
 			//Math.random();
 			//UUID.randomUUID();
@@ -122,7 +122,7 @@ import java.util.regex.Pattern;
 				sb.append(randomChar);
 			}
 			return sb.toString();
-		}*/
+		}
 		
 		/**
 		 * 获取英文和数字组合的字符串
