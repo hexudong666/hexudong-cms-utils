@@ -53,12 +53,12 @@ public class TestFileUtils {
 	@Test
 	public void testReadLines() throws IOException {
 		
-		List<String> lines = FileUtils.readByLines("E:\\周考3文件.txt");
+		List<String> lines = FileUtils.readByLines("E:\\新建文本文档.txt");
 		
 		lines.forEach(x->{System.out.println(" x is " + x);});
 		
 		for (String string : lines) {
-			String[] split = string.split("\\|");
+			String[] split = string.split("\\,");
 			//添加
 		}
 		

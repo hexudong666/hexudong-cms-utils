@@ -102,14 +102,14 @@ public class TestStringUtils {
 	}*/
 	
 	
-	/*@Test
+	@Test
 	public void testIsBlank2() {
 		
 		Boolean blank = stringUtils.isBlank("   ");
 		System.out.println(" blank is " + blank);
 		Assert.assertTrue(blank==true);
 		
-	}*/
+	}
 	
 	//判断是否手机号
 	@Test
@@ -122,6 +122,15 @@ public class TestStringUtils {
 		return false;
 	}
 
-	
+	@Test
+	public static boolean isNumber() {
+		boolean number = stringUtils.isNumber("123124");
+		if (number) {
+			System.out.println("是数字");
+		}else {
+			System.out.println("不是数字");
+		}
+		return false;
+	}
 
 }
